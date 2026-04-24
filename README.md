@@ -51,3 +51,12 @@ Le projet est organisé de manière modulaire en respectant la structure **[.dar
 Utilisez la commande Flutter standard pour récupérer les packages :
 ```bash
 flutter pub get
+# Commande standard (équivalent de npm start)
+flutter run
+
+# Pour forcer le lancement sur Chrome (Web)
+flutter run -d chrome
+
+
+
+
