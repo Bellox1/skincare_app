@@ -57,6 +57,8 @@ flutter run
 # Pour forcer le lancement sur Chrome (Web)
 flutter run -d chrome
 
+## 📄 Licence
 
+Ce projet est sous licence MIT. Développé par **BELLOX**.
 
 
