@@ -4,7 +4,7 @@
 
 ---
 
-## ✨ Points Forts de l'Expérience
+## 🔥 Fonctionnalités Maîtresses
 
 *   **🎨 Design Épuré** : Une interface minimaliste et apaisante, alignée sur l'univers du soin et du bien-être.
 *   **⚡ Navigation Fluide** : Utilisation intensive du widget `Hero` pour des transitions d'images spectaculaires entre la boutique et les détails du produit.
@@ -21,10 +21,10 @@
 
 ## 🛠️ Architecture & Structure du Code
 
-Le projet est organisé de manière modulaire pour garantir une maintenance aisée et une scalabilité optimale.
+Le projet est organisé de manière modulaire en respectant la structure **[.dart](cci:7://file:///home/bellox/Documents/Stage/bellox1%20%28copie%29/Projets/X0/bin/main.dart:0:0-0:0)** pour garantir une maintenance aisée.
 
 ### 1. 📂 Core Logic (`lib/`)
-*   **[main.dart](cci:7://file:///home/bellox/Documents/Stage/bellox1%20%28copie%29/Projets/X0/bin/main.dart:0:0-0:0)** : Point d'entrée orchestrant les routes et le thème global.
+*   **[main.dart](cci:7://file:///home/bellox/Documents/Stage/bellox1%20%28copie%29/Projets/X0/bin/main.dart:0:0-0:0)** : Point d'entrée orchestrant les routes et le thème global de l'application.
 *   **`lancement.dart`** : Splash screen immersif avec appel à l'action.
 *   **`boutique.dart`** : Hub principal avec filtrage dynamique (Women, Men, Kids) et grille de produits.
 *   **`detail.dart`** : Fiche produit détaillée avec gestion des quantités et animations Hero.
@@ -32,30 +32,22 @@ Le projet est organisé de manière modulaire pour garantir une maintenance ais�
 *   **`favoris.dart` & `profil.dart`** : Espaces personnalisés pour l'utilisateur.
 
 ### 2. 🏗️ Modèle de Données (`lib/modeles/`)
-*   **`produit.dart`** : Contrat de données robuste définissant les propriétés d'un article.
-*   **`donnees_fictives.dart`** : Mock data permettant de tester l'UI avec des scénarios réels.
+*   **`produit.dart`** : Définition de la classe `Produit` (attributs, prix, catégories).
+*   **`donnees_fictives.dart`** : Mock data permettant de tester l'UI sans base de données externe.
 
 ### 3. 🧠 Services & State (`lib/services/`)
-*   **`service_panier.dart`** : Logique métier du panier (ajout, suppression, calcul).
-*   **`service_favoris.dart`** : Gestion centralisée de l'état des coups de cœur.
-
-### 4. 🎨 Design System (`lib/widgets/`)
-*   **`couleurs.dart`** : Charte graphique centralisée pour une cohérence visuelle parfaite.
+*   **`service_panier.dart`** : Logique métier (ajouter, supprimer, vider, total).
+*   **`service_favoris.dart`** : Gestion centralisée des coups de cœur.
 
 ---
 
-## 🚀 Stack Technique
+## 🚀 Installation & Lancement
 
-*   **Framework** : [Flutter](https://flutter.dev/) (Multi-plateforme)
-*   **Langage** : [Dart](https://dart.dev/)
-*   **Icons** : Cupertinos & Material Icons
-*   **Animations** : Hero Animations & Transitions Custom
+### 1. Prérequis
+*   **Flutter SDK** (v3.0.0 ou supérieure)
+*   Un émulateur (Android/iOS) ou un navigateur (Chrome) pour le test.
 
----
-
-## 📦 Installation & Utilisation
-
-1. **Prérequis** : Flutter SDK installé.
-2. **Récupération** : 
-   ```bash
-   git clone https://github.com/votre-compte/skincare-app.git
+### 2. Installation des dépendances
+Utilisez la commande Flutter standard pour récupérer les packages :
+```bash
+flutter pub get
